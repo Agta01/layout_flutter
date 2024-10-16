@@ -56,6 +56,20 @@ class MyApp extends StatelessWidget {
           _buildButtonColumn(color, Icons.share, 'SHARE'),
         ],
       );
+
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Tempat wisata ini ada Jalan Raya Madya, Jurangrejo, Pandesari, Pujon, Kabupaten Malang. '
+        'dengan foto atau tempat wisata yang ingin '
+        'Florawisata San Terra Lafonte buka pukul 08.00-17.00 WIB.'
+        'harga tiket Florawisata San Terra de Lafonte mulai dari Rp 25.000 pada weekdays (hari biasa),'
+        'serta mulai dari Rp 30.000 untuk weekend (akhir pekan) atau libur nasional.'
+        'Nama Saya Agta Fadjrin Aminullah dengan NIM 2241760072 ',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Agta Fadjrin Aminullah dan 2241760072',
       home: Scaffold(
@@ -66,6 +80,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection,
+            textSection,
             ],
             ),  
       ),
